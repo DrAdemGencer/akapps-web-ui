@@ -13,14 +13,35 @@ import ForgetPwd from "../pages/Authentication/ForgetPassword"
 // Dashboard
 import Dashboard from "../pages/Dashboard/index"
 
+// Utility pages
+import Page404 from "../pages/Utility/pages-404"
+import News from "pages/News"
+import Archive from "pages/Archive"
+import Terms from "pages/Terms"
+import Scores from "pages/Scores"
+import Docent from "pages/Docent"
+
 const userRoutes = [
   { path: "/dashboard", component: Dashboard },
 
-  // //profile
-  { path: "/profile", component: UserProfile },
+  // profile
+  { path: "/news", component: News },
+
+  // profile
+  { path: "/archive", component: Archive },
+
+  // profile
+  { path: "/docent", component: Docent },
+
+  // profile
+  { path: "/terms", component: Terms },
+
+  // profile
+  { path: "/scores", component: Scores },
 
   // this route should be at the end of all other routes
   { path: "/", exact: true, component: () => <Redirect to="/dashboard" /> },
+  { path: "*", component: Page404 }
 ]
 
 const authRoutes = [

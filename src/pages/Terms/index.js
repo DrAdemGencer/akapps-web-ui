@@ -2,14 +2,14 @@ import React from "react"
 import { Container } from "reactstrap"
 import TheTitle from "pages/UI/TheTitle"
 
-const Dashboard = props => {
+const Terms = props => {
   return (
     <React.Fragment>
       <div className="page-content">
-        <TheTitle title="Giriş" />
+        <TheTitle title="Başvuru şartları" />
         <Container fluid>
 
-        <h3>Giriş</h3>
+          <h3>Başvuru şartları</h3>
 
         </Container>
       </div>
@@ -17,4 +17,4 @@ const Dashboard = props => {
   )
 }
 
-export default Dashboard
+export default Terms
